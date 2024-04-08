@@ -97,6 +97,6 @@ private fun parseErrorMessage(
     return when (error.error) {
         is SocketTimeoutException -> "Server Unavailable."
         is ConnectException -> "Internet Unavailable."
-        else -> "Unknown Error"
+        else -> "Something went wrong"
     }
 }

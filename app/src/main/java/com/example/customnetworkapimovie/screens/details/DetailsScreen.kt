@@ -192,7 +192,7 @@ fun DetailView(movieDetailsData: MovieDetailsData?, modifier: Modifier, error: E
                     .alpha(alphaAnim)
             )
             Text(
-                text = error?.message.orEmpty(),
+                text = error?.message ?: "Something went wrong",
                 modifier = Modifier
                     .padding(top = SMALL_PADDING)
                     .alpha(alphaAnim),
